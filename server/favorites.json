@@ -1,0 +1,20 @@
+[
+  {
+    "code": "DZA",
+    "cca3": "DZA",
+    "name": "Algeria",
+    "flag": "https://flagcdn.com/w320/dza.png",
+    "capital": "Algiers",
+    "population": 44700000,
+    "region": "Africa"
+  },
+  {
+    "code": "ARG",
+    "cca3": "ARG",
+    "name": "Argentina",
+    "flag": "https://flagcdn.com/w320/arg.png",
+    "capital": "Buenos Aires",
+    "population": 45376763,
+    "region": "Americas"
+  }
+]

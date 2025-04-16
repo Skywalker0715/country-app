@@ -1,0 +1,190 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.country-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.country-card img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.country-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.country-card p {
+  margin: 0.25rem 0;
+  color: #34495e;
+  font-size: 0.9rem;
+}
+
+.country-card button {
+  margin-top: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.country-card button:hover {
+  background-color: #2980b9;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navbar {
+  padding: 1rem;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-link {
+  color: #495057;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background: #e9ecef;
+  color: #212529;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.page-title, .favorites-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  word-wrap: break-word;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    padding: 0 1rem;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .country-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .country-card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .country-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .country-card p {
+    font-size: 1rem;
+  }
+
+  .country-card button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  /* Navbar mobile adjustments */
+  .navbar {
+    flex-direction: row; /* keep horizontal */
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 160px;
+    box-sizing: border-box;
+  }
+}
