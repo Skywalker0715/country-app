@@ -123,6 +123,11 @@ app.delete('/favorites/:code', (req, res) => {
     res.json({ message: 'Berhasil dihapus' });
 });
 
+// Route GET / untuk menghindari 404 di root URL
+app.get('/', (req, res) => {
+    res.send('Server berjalan');
+});
+
 // Start server
 app.listen(PORT, () => {
     console.log(`Server berjalan di http://localhost:${PORT}`);
