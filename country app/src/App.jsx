@@ -7,7 +7,7 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState, useEffect } from 'react';
-import CountryList from './components/countrylist';
+import CountryList from './components/CountryList';
 import FavoritesPage from './components/FavoritesPage';
 import './App.css';
 import axios from 'axios'; 
