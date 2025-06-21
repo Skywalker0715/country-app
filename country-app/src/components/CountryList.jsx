@@ -9,16 +9,16 @@ const CountryList = ({ favorites, setFavorites }) => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch('https://restcountries.com/v3.1/all')
-            .then(response => response.json())
-            .then((data) => {
-                const sortedData = data.sort((a, b) =>
-                  a.name.common.localeCompare(b.name.common)
-                );
-                setCountries(sortedData);
-              })
-              .catch((err) => console.error('Error fetching countries:', err));
-          }, []);
+      fetch('https://restcountries.com/v3.1/all?fields=name,cca3,flags,capital,population,region')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => setCountries(data))
+        .catch(error => console.error('Error fetching countries:', error));
+    }, []);
     
           const handleSearch = (e) => {
             setSearchTerm(e.target.value.toLowerCase());

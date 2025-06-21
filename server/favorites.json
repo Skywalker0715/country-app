@@ -16,5 +16,14 @@
     "capital": "Buenos Aires",
     "population": 45376763,
     "region": "Americas"
+  },
+  {
+    "code": "TGO",
+    "cca3": "TGO",
+    "name": "Togo",
+    "flag": "https://flagcdn.com/w320/tgo.png",
+    "capital": "Lomé",
+    "population": 8278737,
+    "region": "Africa"
   }
 ]
