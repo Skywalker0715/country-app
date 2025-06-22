@@ -80,8 +80,8 @@ const CountryList = ({ favorites, setFavorites }) => {
                                 population: country.population,
                                 region: country.region
                               };
-                              await axios.post('http://localhost:5000/favorites', favoriteData);
-                              setFavorites(prev => [...prev, country]);
+                              const response = await axios.post('http://localhost:5000/favorites', favoriteData);
+                              setFavorites(prev => [...prev, response.data.data]);
                               toast.success(`${country.name.common} ditambahkan ke favorit`);
                             }
                           } catch (err) {

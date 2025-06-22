@@ -23,7 +23,7 @@ function App() {
     const fetchFavorites = async () => {
       setLoading(true);
       try {
-        const res = await axios.get('/favorites', {
+        const res = await axios.get('http://localhost:5000/favorites', {
           timeout: 5000,
           validateStatus: function (status) {
             return status < 500; // Reject only if status is 500 or above
